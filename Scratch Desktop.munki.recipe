@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Scratch Desktop</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Scratch Desktop</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15</string>
+		<key>baseurl</key>
+		<string>https://scratch.mit.edu</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Programming</string>
+			<key>description</key>
+			<string>Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations.</string>
+			<key>developer</key>
+			<string>MIT</string>
+			<key>display_name</key>
+			<string>Scratch Desktop</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR-recipes.munki.Scratch Desktop</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dataJAR-recipes.download.Scratch Desktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6247f12b401d1ad8aebdc3b788ad61a5df14ff60</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Scratch Desktop/Scratch Desktop.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>4b930f39b723a9b85b58c7f243ce542778cc29e03aed9fbb33addde01a500bdd</string>
+			</dict>
+			<key>com.github.dataJAR-recipes.munki.Scratch Desktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6247f12b401d1ad8aebdc3b788ad61a5df14ff60</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.dataJAR-recipes/Scratch Desktop/Scratch Desktop.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>cfce7190797d9954ed42025c9bc6db2b132cd4ca2a067df33d255fcff8164344</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

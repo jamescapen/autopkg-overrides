@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.pkg.SilhouetteStudio</string>
+	<key>Input</key>
+	<dict>
+		<key>DL_URL</key>
+		<string>http://silhouettefr.fr/file</string>
+		<key>NAME</key>
+		<string>Silhouette Studio</string>
+		<key>SEARCH_PATTERN</key>
+		<string>(Version [\d.]+)</string>
+		<key>SEARCH_URL</key>
+		<string>http://silhouettefr.fr/silhouette_logiciel.html</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.sebtomasi.pkg.SilhouetteStudio</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.sebtomasi.SharedProcessors/TextSubstituer</key>
+			<dict>
+				<key>git_hash</key>
+				<string>84d410b7be0f4c9054631a69416ecc8e51f2fac3</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.sebtomasi-recipes/SharedProcessors/TextSubstituer.py</string>
+				<key>sha256_hash</key>
+				<string>74369a1be286534150748742c9a3edcb485f23ad337f7e7c211169cb5b3cf87b</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.sebtomasi.download.SilhouetteStudio</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b61f8c423481769ec1c156573bdb511225e67526</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.sebtomasi-recipes/Silhouette Studio/SilhouetteStudio.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>cc323489ad7f5f7e46116b2427bf055c5af55e882eb362ca941715ba83ba00b9</string>
+			</dict>
+			<key>com.github.sebtomasi.pkg.SilhouetteStudio</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b61f8c423481769ec1c156573bdb511225e67526</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.sebtomasi-recipes/Silhouette Studio/SilhouetteStudio.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>47938f6fac7d3d555683b5374a8c154f366ec0c6ba0d1e47b3944835aaf1320e</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

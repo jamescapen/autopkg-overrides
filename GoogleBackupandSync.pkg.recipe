@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.pkg.GoogleBackupandSync</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/drive/InstallBackupAndSync.dmg</string>
+		<key>NAME</key>
+		<string>BackupandSync</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.nstrauss.pkg.BackupandSync</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.nstrauss.download.BackupandSync</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0687b9d27d7d2156849302d5728b2c12d9e937dd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.nstrauss-recipes/Google Backup and Sync/GoogleBackupandSync.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b973ea53c63a4defeda9b507c79a9bbf77c7fb36ea5301bb5767807cbc7ac913</string>
+			</dict>
+			<key>com.github.nstrauss.pkg.BackupandSync</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0687b9d27d7d2156849302d5728b2c12d9e937dd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.nstrauss-recipes/Google Backup and Sync/GoogleBackupandSync.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>a60e4cede533127207e99c410808a0ce88b6294f4eb9c6c3326af161633a3552</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

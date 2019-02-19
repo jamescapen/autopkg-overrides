@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.NoMAD</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/NoMAD</string>
+		<key>NAME</key>
+		<string>NoMAD</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>NoMAD is a helpful replacement for Active Directory bindings, using Kerberos and other resources to provide Active Directory services without a fragile binding plugin</string>
+			<key>display_name</key>
+			<string>NoMAD</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.tbridge.munki.nomad</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.tbridge.download.NoMAD</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2b3a2b15c7e9604d32e41dfb5f04dc9c6739ba1c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.tbridge-recipes/NoMAD/NoMAD.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>f421bce85901ee75c08094e4603fb0cb4e0a14a5870bf296af2ae78a82215ccc</string>
+			</dict>
+			<key>com.github.tbridge.munki.nomad</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1e5133d3c8e84b1924accdeb9d5e6f15768ed2fd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.tbridge-recipes/NoMAD/NoMAD.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>b9a2046db8e10cdef7dd37b2d9940d8d9071e0b28b6f5b8a05848ed66651ec75</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

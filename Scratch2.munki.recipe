@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.Scratch2</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps</string>
+		<key>NAME</key>
+		<string>Scratch 2</string>
+		<key>baseurl</key>
+		<string>https://scratch.mit.edu</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Programming</string>
+			<key>description</key>
+			<string>Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations.</string>
+			<key>developer</key>
+			<string>MIT</string>
+			<key>display_name</key>
+			<string>Scratch 2</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>requires</key>
+			<array>
+				<string>AdobeAIR</string>
+			</array>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.aysiu.munki.Scratch2</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.aysiu.download.Scratch2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>760242c0b0d97047d269c82bea2f6b93098a4d59</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.aysiu-recipes/Scratch-2/Scratch2.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>ca06499f4e41c367e0cd30d42255a69abb1fffece77a4fffa3ac09133c0f7198</string>
+			</dict>
+			<key>com.github.aysiu.munki.Scratch2</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1194324b979b7b25caf5d621f1f5d66a3eacf54f</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.aysiu-recipes/Scratch-2/Scratch2.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>96a6af8ebeb3988c099d68d24423da709301bf157dc4c6322191446f862ac184</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.munki.AdobeAir</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/adobe</string>
+		<key>NAME</key>
+		<string>AdobeAIR</string>
+		<key>URL</key>
+		<string>https://airdownload.adobe.com/air/mac/download/latest/AdobeAIR.dmg</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>The Adobe AIR runtime enables developers to package the same code into native applications and games for Windows and Mac OS desktops as well as iOS and Android devices, reaching over a billion desktop systems and mobile app stores for over 500 million devices.</string>
+			<key>display_name</key>
+			<string>Adobe® Integrated Runtime</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.munki.AdobeAIR</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.AdobeAIR</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e635a469d30f3bf06bc320391e6afec07677c429</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/AdobeAIR/AdobeAIR.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e5e9ed6620d67d3af9c099ffd93f6f56a65d7788917c4493c8dc12481eb09be9</string>
+			</dict>
+			<key>com.github.autopkg.munki.AdobeAIR</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c7d5404550e6a98495500047901661d2571f2620</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/AdobeAIR/AdobeAir.munki.recipe</string>
+				<key>sha256_hash</key>
+				<string>90783b6951d9db3ab022e627d0df42c7da9c436ac7dca85eba73ed20c28dd81e</string>
+			</dict>
+			<key>com.github.autopkg.pkg.AdobeAIR</key>
+			<dict>
+				<key>git_hash</key>
+				<string>2c27e29eedfcdc3d986d3327115ea6a9ff7e663b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/AdobeAIR/AdobeAIR.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>98db243a312d11a1abbbafecdce39f7b3232170b186a5037a902b222ff99c6dd</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
